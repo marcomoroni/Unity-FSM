@@ -111,3 +111,13 @@ protected override void Update()
 	if (Input.GetKeyDown(KeyCode.R)) { ChangeCurrentState(FinnStates.Run); }
 }
 ```
+
+### Debug mode
+
+To initialize the FSM in debug mode add `true` as the second argument:
+
+``` cs
+InitializeFiniteStateMachine<FinnStates>(FinnStates.Start, true);
+```
+
+This lets you see more info in the console.
