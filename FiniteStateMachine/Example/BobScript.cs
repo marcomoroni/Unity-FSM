@@ -83,6 +83,11 @@ public class BobScript : FiniteStateMachine
 		if (Input.GetKeyDown(KeyCode.R)) { ChangeCurrentState(BobStates.Run); }
 		if (Input.GetKeyDown(KeyCode.D)) { ChangeCurrentState(BobStates.Die); }
 	}
+
+	protected override void FixedUpdate()
+	{
+		base.FixedUpdate();
+	}
 }
 
 public enum BobStates
